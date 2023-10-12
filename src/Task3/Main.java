@@ -22,17 +22,13 @@ public class Main {
         person.add(new Teacher("Signe", canteach));
         person.add(new Teacher("Jesper", canteach2));
 
-        //Person stud1 = new Student("Ole", course);
-        //Person stud2 = new Student("Kjeld", course);
-        //Person teach1 = new Teacher("Signe", canteach);
-        //Person teach2 = new Teacher("Jesper", canteach);
-
+        
         System.out.println(person.size());
         for(Person p: person) {
 
             if(p.addCourse("Java 1.0")) {
                 if(p instanceof Student) {
-                    System.out.println(p.getName() + " har allerede bestået dette kursus");
+                    System.out.println(p.getName() + " har allerede bestÃ¥et dette kursus");
                 } else {
                     System.out.println(p.getName() + " kan allerede undervise i dette kursus");
                 }
